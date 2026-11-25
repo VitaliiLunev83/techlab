@@ -3,10 +3,184 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechLab</title>
+
+    <title>TechLab — журнал о технологиях</title>
+
+    <!-- Подключение общей таблицы стилей -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>TechLab</h1>
-    <p>Учебный проект по HTML, CSS и JavaScript.</p>
+
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container">
+
+            <!-- Информация о журнале -->
+            <div class="header-top">
+                <span>Журнал о технологиях</span>
+                <span>2026 / Выпуск №001</span>
+            </div>
+
+            <!-- Название и CSS-логотип -->
+            <div class="brand">
+
+                <a href="index.html" class="brand-link">
+
+                    <div class="logo" aria-hidden="true">
+                        <span class="logo-t"></span>
+                        <span class="logo-l"></span>
+                    </div>
+
+                    <span class="brand-name">TECHLAB<span>.</span></span>
+
+                </a>
+
+                <p>Журнал о цифровом мире</p>
+
+            </div>
+
+            <!-- Главное меню навигации -->
+            <nav class="navigation">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="#hardware">Железо</a></li>
+                    <li><a href="#networks">Сети</a></li>
+                    <li><a href="#ai">AI</a></li>
+                    <li><a href="#development">Разработка</a></li>
+                    <li class="nav-lab">
+                        <a href="#laboratory">Лаборатория</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- Основное содержимое сайта -->
+    <main class="container">
+
+        <h1>Мир технологий</h1>
+
+        <!-- Главная тема журнала -->
+        <section class="featured">
+
+            <h2>В фокусе</h2>
+
+            <div class="featured-grid">
+
+                <!-- Главная статья -->
+                <article class="featured-main" id="ai">
+                    <p class="category">Искусственный интеллект</p>
+                    <h3>Суперкомпьютер на рабочем столе</h3>
+                    <p>
+                        Как локальные нейросети меняют наше
+                        представление о персональных компьютерах.
+                    </p>
+                </article>
+
+                <!-- Дополнительные статьи -->
+                <div class="featured-side">
+
+                    <article id="networks">
+                        <p class="category">Сети</p>
+                        <h3>Что скрывается за облачными технологиями?</h3>
+                        <p>
+                            Разбираемся в устройстве современной
+                            сетевой инфраструктуры.
+                        </p>
+                    </article>
+
+                    <article id="hardware">
+                        <p class="category">Железо</p>
+                        <h3>Эволюция современных процессоров</h3>
+                        <p>
+                            От простых вычислений до сложных
+                            многопоточных задач.
+                        </p>
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Раздел учебных заданий -->
+        <section class="laboratory" id="laboratory">
+
+            <h2>Лаборатория TechLab</h2>
+
+            <p>
+                Изучаем веб-разработку на практике.
+                Пять заданий — один проект.
+            </p>
+
+            <ul>
+                <li>Задание 1. Адаптивная вёрстка</li>
+                <li>Задание 2. Рисунок средствами CSS</li>
+                <li>Задание 3. Flexbox</li>
+                <li>Задание 4. JavaScript и DOM</li>
+                <li>Задание 5. Drag &amp; Drop</li>
+            </ul>
+
+        </section>
+
+        <!-- Последние материалы журнала -->
+        <section class="latest">
+
+            <h2>Последние материалы</h2>
+
+            <div class="latest-grid">
+
+                <article id="development">
+                    <p class="category">Разработка</p>
+                    <h3>Анатомия веб-сайта</h3>
+                    <p>
+                        Как HTML, CSS и JavaScript работают вместе.
+                    </p>
+                </article>
+
+                <article>
+                    <p class="category">Инфраструктура</p>
+                    <h3>Сети без магии</h3>
+                    <p>
+                        Основные принципы передачи данных
+                        в компьютерных сетях.
+                    </p>
+                </article>
+
+                <!-- Дополнительная информация -->
+                <aside class="sidebar">
+                    <h3>Популярные темы</h3>
+                    <ol>
+                        <li>Что такое Docker?</li>
+                        <li>Будущее локальных LLM</li>
+                        <li>Как работает VPN?</li>
+                    </ol>
+                </aside>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Подвал сайта -->
+    <footer class="footer">
+
+        <div class="container">
+            <h2>TECHLAB.</h2>
+            <p>Учебный проект по веб-разработке</p>
+            <p>HTML / CSS / JavaScript</p>
+
+            <a href="https://github.com/VitaliiLunev83/techlab">
+                Исходный код на GitHub
+            </a>
+
+            <p>&copy; 2026 TechLab</p>
+        </div>
+
+    </footer>
+
 </body>
 </html>
